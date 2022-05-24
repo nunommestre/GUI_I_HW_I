@@ -1,0 +1,306 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Nuno Mestre, UMass Lowell Computer Science, nuno_mestre@student.uml.edu
+May 18, 2022
+Description: A simple website that displays my skills and
+past projects using HTML and CSS.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nuno Mestre's Website</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- page content -->
+    <!-- Header table with my name and bio -->
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <img
+            src="Images/selfie.png"
+            class="circle-images"
+            alt="A selfie of myself"
+          />
+        </td>
+        <td>
+          <h1>Nuno Mestre</h1>
+          <p>
+            <em
+              ><strong>Computer Science Student</strong> at the UMass-Lowell</em
+            >
+          </p>
+          <p>
+            I'm currently working on my own video game and have several projects
+            for you to explore below.
+          </p>
+          <!-- Table row with links to my socials -->
+          <table>
+            <tr>
+              <td>
+                <p>
+                  <a href="mailto:nuno_mestre@student.uml.edu">Contact Me</a>
+                </p>
+              </td>
+              <td>
+                <p><a href="https://github.com/nunommestre">Github</a></p>
+              </td>
+              <td>
+                <p>
+                  <a href="https://www.linkedin.com/in/nuno-mestre-8b5951151/"
+                    >LinkedIn</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <!-- All of my skills as images listed in a row -->
+    <div class="skills">
+      <h1 class="title">Skills</h1>
+      <table class="skills-table">
+        <tr>
+          <td>
+            <img
+              src="Logos/Javascript_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/HTML_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/CSS_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/ReactJS_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/Bootstrap_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/Git_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/C++_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+          <td>
+            <img
+              src="Logos/Vim_Logo.png"
+              class="skills-logo"
+              alt="Javascript Logo"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Projects section with a custom table with different CSS properties -->
+    <div class="projects">
+      <h1 class="title">Projects</h1>
+      <table class="project-table">
+        <tr>
+          <td class="project-data">
+            <strong>Decentralized NFT Application</strong>
+          </td>
+          <td class="project-data">
+            <img src="Images/NFT.png" class="circle-images" alt="NFT Picture" />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                A Web3 application connected to an ERC721 Ethereum smart
+                contract
+              </li>
+              <li>
+                Using Web3 and Ether.js libraries the website supports the
+                minting of ERC721 tokens
+              </li>
+              <li>
+                Used OpenZepplin libraries to aid the smart contract, and
+                preformed unit tests in JavaScript using mocha and chai.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data">
+            <strong>Nbody Simulation</strong>
+          </td>
+          <td class="project-data">
+            <img
+              src="Images/Planets.png"
+              class="circle-images"
+              alt="Nbody Picture"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                A command line program that takes arguments that determine the
+                number of planets in a universe along with data
+              </li>
+              <li>
+                Calculates net force and simulates the given planatary system
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data">
+            <strong>SFML Guitar Simulator</strong>
+          </td>
+          <td class="project-data">
+            <img
+              src="Images/Guitar.png"
+              class="circle-images"
+              alt="Guitar Picture"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                A command line program that simulates guitar strings being
+                strung by passing random values (white noise) and then
+                calculating each keys respective frequency.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data">
+            <strong>Fibonacci Photo Encrypter</strong>
+          </td>
+          <td class="project-data">
+            <img
+              src="Images/FibLFSR.png"
+              class="circle-images"
+              alt="Photo Encrypter Picture"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                A simple command line project that encrypts an image using a
+                left Fibonacci shift register with respect to the 16 bit
+                argument passed in
+              </li>
+              <li>
+                The only way to decrypt it is to use the exam same key when
+                re-running the program
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data">
+            <strong>Evil Hangman</strong>
+          </td>
+          <td class="project-data">
+            <img
+              src="Images/Hangman.png"
+              class="circle-images"
+              alt="Evil Hangman Picture"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                Designed hangman game in C utilizing trees and arrays; computer
+                is evil and always switching the word
+              </li>
+              <li>Used the Ubuntu command line and Vim text editor</li>
+              <li>
+                Created over 25 functions manipulating strings and switching
+                between similar word groups, along with unit test functions to
+                ensure all functions worked as expected
+              </li>
+              <li>
+                Coded an alternate version that exposes the computer's cheating
+                nature
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data">
+            <strong>Sierpinski Trangle</strong>
+          </td>
+          <td class="project-data">
+            <img
+              src="Images/Triangle.png"
+              class="circle-images"
+              alt="Sierpinski Picture"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                A recursive program that takes two arguments in the command line
+                to determine the width of each triangle and number of
+                repetitions
+              </li>
+              <li>
+                Recursion allows for cool repetition of each triangle making on
+                giant one
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="project-data"><strong>Ants and Doodlebugs</strong></td>
+          <td class="project-data">
+            <img
+              src="Images/Ants-DoodleBugs.png"
+              class="circle-images"
+              alt="Ants and Doodlebugs Image"
+            />
+          </td>
+          <td class="project-data">
+            <ul>
+              <li>
+                Developed a predator vs prey simulation in C++ using SFML
+                libraries where five doodlebugs aim to eat all 100 ants before
+                they starve to death
+              </li>
+              <li>
+                Implemented virtual functions for similar breeding habits of
+                both organisms
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

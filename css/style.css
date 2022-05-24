@@ -1,0 +1,50 @@
+/* Links are white by default, purple when hovered over */
+a:link {
+  color: #fffefe;
+}
+a:hover {
+  color: #f70be3;
+}
+/* Padding for the skills div */
+.skills {
+  padding: 3% 15%;
+}
+/* Formats all the skills logos to be a set size and hold a padding to look nicer*/
+.skills-logo {
+  padding: 0% 10%;
+  width: 150px;
+  height: 150px;
+}
+/* Ensures skills are centered in the skills div*/
+.skills-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Makes all of the circle image the same height and width on the website */
+.circle-images {
+  width: 200px;
+  height: 200px;
+}
+/* Universal blue background and white text */
+body {
+  background-color: rgb(28, 67, 173);
+  color: white;
+}
+/* Centers all section titles within their respective parent containers */
+.title {
+  text-align: center;
+}
+/* Adds a padding to the projects div */
+.projects {
+  padding: 0% 25%;
+}
+/* Custom thicker table border and color for the projects table */
+.project-table,
+.project-data {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: 10px solid;
+  border-collapse: collapse;
+  border-color: white;
+}
