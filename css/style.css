@@ -9,6 +9,11 @@ a:hover {
 .info-data {
   padding: 20px;
 }
+li {
+  display: inline;
+  margin-left: 0px;
+  margin-right: 3px;
+}
 /* Formats all the skills logos to be a set size and hold a padding to look nicer*/
 .skills {
   padding: 3% 15%;
